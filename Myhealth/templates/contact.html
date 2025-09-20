@@ -1,0 +1,59 @@
+{% extends 'navigationbar.html' %}
+{% load static %}
+{% block body %}
+
+<style>
+.mydivstyle {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px;
+    border-radius: 70px;
+    margin-bottom: 15px;
+    background-color: #DDF4E7;
+}
+.mydivstyle:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+.mydivstyle i {
+    font-size: 2rem;
+    color: #0d6efd;
+}
+    body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #17313E;
+            font-family: Arial, sans-serif;
+        }
+</style>
+
+<div class="container" style="margin-top:50px">
+    <h2 class="text-center text-primary mb-5">Contact Us</h2>
+
+    <div class="row text-center">
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fas fa-phone-square"></i> Contact</h4>
+            <p class="mt-3 font-weight-bold"><a class="text-danger" href="tel:+919694663184">+91 9694663184</a></p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fas fa-envelope"></i> Send Email</h4>
+            <p class="mt-3 font-weight-bold"><a class="text-danger" href="mailto:myhealth@gmail.com">myhealth@gmail.com</a></p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fas fa-map-marker-alt"></i> Hospital Address</h4>
+            <p class="mt-3 font-weight-bold"><a class="text-danger" href="http://maps.google.com/maps?q=Sector18+Noida">Sector 18, Noida</a></p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+            <h4><i class="fas fa-clock"></i> Working Hours</h4>
+            <p class="mt-3 font-weight-bold text-danger">11:00 AM - 08:00 PM</p>
+        </div>
+    </div>
+</div>
+
+<!-- FontAwesome for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+{% endblock %}
